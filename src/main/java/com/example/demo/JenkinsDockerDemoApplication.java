@@ -15,6 +15,6 @@ public class JenkinsDockerDemoApplication {
 
     @GetMapping
     public String hello() {
-        return "hello world";
+        return "hello 妹妹";
     }
 }

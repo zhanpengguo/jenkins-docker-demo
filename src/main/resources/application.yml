@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: jekins-docker-demo
+logging:
+  file:
+    path: /var/logs

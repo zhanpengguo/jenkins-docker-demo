@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
+
 @Slf4j
 @RestController
 @SpringBootApplication
@@ -17,7 +19,12 @@ public class JenkinsDockerDemoApplication {
 
     @GetMapping
     public String hello() {
-        print();
+//        print();
+        try {
+            ImagesUtil.meizitu();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return "hello 妹妹";
     }
 
